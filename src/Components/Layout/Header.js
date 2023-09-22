@@ -1,16 +1,18 @@
-import React,{Fragment} from 'react'
+import React, { Fragment } from 'react';
+import Cart from '../Cart/cart';
 // import './Header.css';
-import Meals from '../../Assets/meals.jpeg'
+import Meals from '../../Assets/meals.jpeg';
+import Navbar from '../Navbar';
 const Header = () => {
   return (
+
     <Fragment>
-    <nav>
-        <h1>Meals</h1>
-        <button>Cart</button>
-    </nav>
-    <div>
-        <img src={Meals} alt="Image"/>
-    </div>
+      <Navbar />
+      <div className='w-full h-screen object-cover'>
+        <img src={Meals} alt='banner' className='object-cover h-full w-full' />
+      </div>
+
+
     </Fragment>
   )
 }
